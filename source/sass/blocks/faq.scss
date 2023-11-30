@@ -94,10 +94,16 @@ margin-right: 40px;
 
 .faq__button-img {
   border-radius: 50%;
-  //fill: $default-white;
+  stroke: $base;
 }
 
-.faq__sublist-button:hover .faq__button-img {
+.faq__sublist-button:hover .faq__button-img,
+.faq__sublist-button:focus-visible .faq__button-img {
   fill: $base;
   stroke: $default-white;
+}
+
+.faq__sublist-button:active .faq__button-img {
+fill: $base;
+
 }
