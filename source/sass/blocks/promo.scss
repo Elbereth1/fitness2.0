@@ -1,0 +1,109 @@
+.promo {
+  padding: 120px 0 100px;
+}
+
+.promo .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $default-white;
+}
+
+.promo__wrapper {
+  background-color: $promo;
+  padding: 85px 78px;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: 250px 100px;
+  grid-template-rows: repeat(2, 78px);
+  gap: 30px 50px;
+  margin: 0 0 33px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.promo__list p {
+  margin: 0;
+}
+
+.promo__item:first-of-type {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 3;
+  margin: 0;
+  align-items: center;
+}
+
+.promo__title {
+  font-size: 82px;
+  line-height: normal;
+  color: $default-white;
+  font-weight: 600;
+  font-family: "Alumni sans";
+}
+
+.promo__date-wrapper {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, min-content);
+
+}
+
+.promo__text {
+  font-size: 18px;
+  line-height: 1.5;
+  }
+
+.promo__time-wrapper {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.promo__date {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 1px;
+    background-color: $default-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+}
+
+.promo__date-text {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.promo__link {
+  width: 343px;
+  padding: 29px;
+  text-align: center;
+  color: $default-white;
+  border: 4px solid $default-white;
+  text-transform: uppercase;
+
+  &:hover {
+
+  }
+}
+
+.promo img {
+  height: 100%;
+}

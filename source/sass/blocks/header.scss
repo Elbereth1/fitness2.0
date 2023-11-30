@@ -1,0 +1,19 @@
+.header {
+  background-color: $main-gradient;
+  display: flex;
+  z-index: 5;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 104px 10px;
+}
+
+.header__phone-link {
+  color: $default-white;
+  font-size: 26px;
+  font-family: Alumni Sans;
+  font-weight: 600;
+  padding: 10px;
+}

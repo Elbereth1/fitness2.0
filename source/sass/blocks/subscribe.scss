@@ -1,0 +1,172 @@
+.subscribe {
+  background-color: $add-white;
+  padding: 120px 0;
+  position: relative;
+}
+
+.subscribe__title {
+  font-family: Alumni Sans;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  margin: 0 0 98px;
+  text-align: center;
+}
+
+.subscribe__list {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe__item {
+  padding: 68px 77px;
+  background-color: $default-white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    right: 3px;
+    background-color: $default-white;
+    z-index: -2
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: $main-gradient;
+    z-index: -3;
+    display: none;
+  }
+}
+
+.subscribe__item:hover::after,
+.subscribe__item:focus-visible::after {
+  display: block;
+}
+
+.subscribe__item span {
+  position: relative;
+}
+
+.subscribe__item img {
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
+}
+
+.subscribe__subtitle {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  margin: 0 auto 22px;
+
+}
+
+.subscribe__item p {
+  margin: 0 auto 96px;
+}
+
+.subscribe__price {
+  z-index: 5;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 59px;
+  text-align: center;
+  color: $additional;
+}
+
+.subscribe__btn {
+  width: 100%;
+  padding: 27px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $base;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $base;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    background-image: linear-gradient(97deg,#ed0233 17.6%,#003eb7 95.31%);
+    color: $default-white;
+    border: transparent;
+  }
+}
+
+.subscribe__shadow {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $shadow;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subscribe__button-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 46px;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subscribe__button-wrapper::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.20);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subscribe__button {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $base;
+  opacity: 0.4;
+  background-color: transparent;
+  border: none;
+  padding: 0 0 20px;
+  cursor: pointer;
+
+  &--current,
+  &:hover,
+  &:focus-visible,
+  &:active {
+    border-bottom: 2px solid $current;
+    color: $base;
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

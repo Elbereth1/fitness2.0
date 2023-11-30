@@ -1,0 +1,83 @@
+.hero {
+  background-image: $main-gradient;
+  margin-top: -85px;
+}
+
+.hero .container {
+  padding: 61px 276px 51px 120px;
+  display: flex;
+  color: $default-white;
+}
+
+.hero__wrapper, .hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero__text-wrapper {
+  padding: 60px 10px 136px 0;
+  justify-content: flex-end;
+  margin-right: -25px;
+}
+
+.hero__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__text {
+  margin: 0;
+}
+
+.hero__wrapper {
+  margin-right: 64px;
+  max-width: 264px;
+}
+
+.hero__subtitle {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 25px 0 0;
+}
+
+.hero .title {
+  font-size: 92px;
+  margin-bottom: 80px;
+  line-height: normal;
+  text-align: right;
+}
+
+.hero__button {
+  padding: 20px;
+  text-align: center;
+  color: $default-white;
+  border: 4px solid $default-white;
+  width: 90%;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $default-white;
+    color: $additional;
+  }
+
+  &:active {
+    background-color: $default-white;
+    color: $base;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

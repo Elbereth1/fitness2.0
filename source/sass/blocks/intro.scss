@@ -1,0 +1,98 @@
+.intro {
+  padding: 120px 0 235px;
+  position: relative;
+}
+
+.intro .container {
+  display: flex;
+}
+
+.intro__text-wrapper {
+  padding: 0 10px 10px 60px;
+  max-width: 35%;
+  margin-right: 85px;
+}
+
+.intro .title {
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.intro__subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 55px;
+}
+
+.intro__text {
+  margin: 0;
+}
+
+.intro__text:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.intro__video-wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(20, 54, 122, 0.50);
+}
+
+;
+
+.intro__video {
+
+}
+
+.intro__btn {
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: transparent;
+  background-color: transparent;
+
+  &:disabled {
+    cursor: auto;
+  }
+}
+
+.intro__btn:hover .intro__btn-circle-1,
+.intro__btn:focus-visible .intro__btn-circle-1,
+.intro__btn:active .intro__btn-circle-1 {
+  stroke: $base;
+  opacity: 1;
+}
+
+.intro__btn:hover .intro__btn-circle-2,
+.intro__btn:focus-visible .intro__btn-circle-2,
+.intro__btn:active .intro__btn-circle-2 {
+  fill: $default-white;
+}
+
+.intro__btn:hover .intro__btn-triangle,
+.intro__btn:focus-visible .intro__btn-triangle,
+.intro__btn:active .intro__btn-triangle {
+  fill: $base;
+}
+
+.intro__btn:disabled .intro__btn-circle-1 {
+  stroke: $base;
+  opacity: 0.2;
+}
+
+.intro__btn:disabled .intro__btn-circle-2 {
+  fill: $default-white;
+  opacity: 0.2;
+}
+
+.intro__btn:disabled .intro__btn-triangle {
+  fill: $base;
+  opacity: 0.2;
+}
