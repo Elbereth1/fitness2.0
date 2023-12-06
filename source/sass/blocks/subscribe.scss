@@ -2,24 +2,36 @@
   background-color: $add-white;
   padding: 120px 0;
   position: relative;
+
+  @media (max-width: $vp-1366) {
+    padding: 0;
+  }
 }
 
-.subscribe__title {
-  font-family: Alumni Sans;
-  font-size: 54px;
-  font-weight: 600;
-  letter-spacing: 1.62px;
-  margin: 0 0 98px;
-  text-align: center;
+.subscribe .container {
+  @media (max-width: $vp-1366) {
+    padding: 100px 163px;
+  }
+}
+
+.subscribe .title {
+  padding: 0 10px;
+
+  @media (max-width: $vp-1366) {
+    margin-bottom: 104px;
+  }
 }
 
 .subscribe__list {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 40px;
+
+  @media (max-width: $vp-1366) {
+    flex-direction: column;
+  }
 }
 
 .subscribe__item {
@@ -29,6 +41,7 @@
   flex-direction: column;
   position: relative;
   z-index: 5;
+  max-width: 366px;
 
   &::before {
     content: '';
@@ -51,6 +64,11 @@
     background-image: $main-gradient;
     z-index: -3;
     display: none;
+  }
+
+  @media (max-width: $vp-1366) {
+    max-width: 442px;
+    margin: 0 auto;
   }
 }
 
@@ -131,20 +149,24 @@
   grid-template-columns: repeat(3, max-content);
   gap: 46px;
   position: absolute;
-  top: 170px;
+  top: 21%;
   left: 50%;
   transform: translateX(-50%);
-}
 
-.subscribe__button-wrapper::before {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: rgba(120, 120, 120, 0.20);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.20);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (max-width: $vp-1366) {
+    top: 9%;
+  }
 }
 
 .subscribe__button {

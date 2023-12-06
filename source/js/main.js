@@ -2,11 +2,13 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getSlider} from './swiper.js';
+import {getSubSlider} from './swiper.js';
 
 
 // ---------------------------------
 
 getSlider();
+getSubSlider();
 
 
 window.addEventListener('DOMContentLoaded', () => {

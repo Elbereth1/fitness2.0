@@ -1,6 +1,10 @@
 .advantages {
  padding: 108px 0 129px;
   background-color: $add-white;
+
+  @media (max-width: $vp-1366) {
+    padding: 0;
+  }
 }
 
 .advantages__list {
@@ -11,10 +15,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $vp-1366) {
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content max-content min-content;
+    gap: 50px 0;
+  }
 }
 
 .advantages__list li {
-  padding: 0 12px 0 0;
+  padding: 0 20px 0 0;
  display: flex;
   position: relative;
 }
@@ -33,11 +43,19 @@
   bottom: 5%;
   left: 0;
   position: absolute;
+
+  @media (max-width: $vp-1366) {
+display: none;
+  }
 }
 
 .advantages__list li:nth-of-type(2) {
   grid-column-start: 3;
   grid-row-start: 1;
+
+  @media (max-width: $vp-1366) {
+    grid-column-start: 2;
+  }
 }
 
 .advantages__list li:nth-of-type(3) {
@@ -49,16 +67,34 @@
   color: $default-white;
   padding: 66px 34px;
   text-align: center;
+
+  @media (max-width: $vp-1366) {
+     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0 163px;
+  }
 }
 
 .advantages__list li:nth-of-type(4) {
   grid-column-start: 1;
   grid-row-start: 2;
+
+  @media (max-width: $vp-1366) {
+grid-row-start: 3;
+    grid-column-start: 1;
+  }
 }
 
 .advantages__list li:nth-of-type(5) {
   grid-column-start: 3;
   grid-row-start: 2;
+
+  @media (max-width: $vp-1366) {
+grid-row-start: 3;
+    grid-column-start: 2;
+  }
 }
 
 .advantages__item-wrapper {
@@ -74,9 +110,18 @@
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
 
+  @media (max-width: $vp-1366) {
+   font-size: 58px;
+  }
+
   &--white {
     font-size: 74px;
     -webkit-text-fill-color: $default-white;
+
+    @media (max-width: $vp-1366) {
+      font-size: 74px;
+      margin: 0 0 20px;
+    }
   }
 }
 
@@ -95,6 +140,11 @@
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 20px;
+
+  @media (max-width: $vp-1366) {
+font-size: 20px;
+    margin: 0 0 15px;
+  }
 }
 
 .advantages__text {

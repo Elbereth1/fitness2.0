@@ -94,6 +94,10 @@ input {
 
 form {
   padding: 0 170px 0 0;
+
+  @media (max-width: $vp-1366) {
+    padding: 0;
+  }
 }
 
 form input {
@@ -103,6 +107,10 @@ form input {
   border: solid $border;
   border-width: 0 0 1px;
   color: $default-white;
+
+  @media (max-width: $vp-1366) {
+    width: 209px;
+  }
 }
 
 form input:not(:last-of-type) {

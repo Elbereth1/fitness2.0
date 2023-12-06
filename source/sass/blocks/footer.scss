@@ -1,12 +1,20 @@
 .footer {
   padding: 42px 104px;
   background-color: $dark;
+
+  @media (max-width: $vp-1366) {
+    padding: 0;
+  }
 }
 
-.footer__container {
+.footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $vp-1366) {
+    padding: 45px;
+  }
 }
 
 .footer__list, .footer__social {
@@ -18,15 +26,17 @@
 
 .footer__list {
  display: flex;
-}
+  gap: 40px;
 
-.footer__item:not(:last-child) {
-  margin-right: 40px;
+  @media (max-width: $vp-1366) {
+    gap: 30px;
+  }
 }
 
 .footer__link {
-  padding: 10px 5px;
+  padding: 2px 5px;
   color: $default-white;
+  font-size: 14px;
 
   &:hover {
     border-bottom: 1px solid $default-white;
