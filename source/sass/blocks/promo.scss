@@ -11,6 +11,10 @@
   grid-template-columns: min-content max-content;
   color: $default-white;
   width: 100%;
+
+  @media (max-width: $vp-768) {
+    display: block;
+  }
 }
 
 .promo__wrapper {
@@ -25,7 +29,6 @@
 .promo__list {
   display: grid;
   grid-template-columns: 180px 100px;
-  grid-template-rows: repeat(2, 78px);
   gap: 30px 50px;
   margin: 0 0 33px;
   padding: 0;
@@ -144,9 +147,11 @@
 
   @media (max-width: $vp-1366) {
     font-size: 10px;
+    padding: 16px;
   }
 }
 
 .promo img {
   height: 100%;
+  width: 100%;
 }

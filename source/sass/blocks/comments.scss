@@ -1,5 +1,13 @@
 .comments {
   padding: 0 0 120px;
+
+  @media (max-width: $vp-768) {
+    padding: 0;
+  }
+}
+
+.comments .container {
+  padding: 63px 47px 70px;
 }
 
 .comments__wrapper {
@@ -11,12 +19,44 @@
   position: relative;
   margin: 0 auto;
   line-height: 1.4;
+
+  @media (max-width: $vp-768) {
+    padding: 55px 40px;
+  }
+}
+
+.comments__img-wrapper {
+  @media (max-width: $vp-768) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+.comments span {
+  @media (max-width: $vp-768) {
+    text-align: right;
+  }
+}
+
+.comments p {
+  margin: 25px 0 0;
+
+  @media (max-width: $vp-768) {
+    margin: 15px 0 0;
+    text-align: center;
+  }
 }
 
 .comments img {
   position: absolute;
   top: 62px;
   left: 60px;
+
+  @media (max-width: $vp-768) {
+    position: static;
+  }
 }
 
 .comments__slide-btn {
@@ -29,10 +69,18 @@
 
   &--prev {
     left: -60px;
+
+    @media (max-width: $vp-768) {
+      left: -40px;
+    }
   }
 
   &--next {
     right: -60px;
+
+    @media (max-width: $vp-768) {
+      right: -45px;
+    }
   }
 }
 

@@ -111,10 +111,19 @@ form input {
   @media (max-width: $vp-1366) {
     width: 209px;
   }
+
+  @media (max-width: $vp-768) {
+    width: 100%;
+    margin: 0 0 30px;
+  }
 }
 
 form input:not(:last-of-type) {
   margin-right: 30px;
+
+  @media (max-width: $vp-768) {
+    margin-right: 0;
+  }
 }
 
 form input::-webkit-input-placeholder,

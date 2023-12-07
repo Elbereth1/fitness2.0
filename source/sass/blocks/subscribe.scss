@@ -10,7 +10,13 @@
 
 .subscribe .container {
   @media (max-width: $vp-1366) {
-    padding: 100px 163px;
+    padding-left: 163px;
+    padding-right: 163px;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -19,6 +25,10 @@
 
   @media (max-width: $vp-1366) {
     margin-bottom: 104px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 93px;
   }
 }
 
@@ -31,6 +41,10 @@
 
   @media (max-width: $vp-1366) {
     flex-direction: column;
+  }
+
+  @media (max-width: $vp-768) {
+    gap: 35px;
   }
 }
 
@@ -70,6 +84,10 @@
     max-width: 442px;
     margin: 0 auto;
   }
+
+  @media (max-width: $vp-768) {
+    padding: 55px 42px;
+  }
 }
 
 .subscribe__item:hover::after,
@@ -94,10 +112,18 @@
   line-height: 1.15;
   margin: 0 auto 22px;
 
+  @media (max-width: $vp-768) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__item p {
   margin: 0 auto 96px;
+
+  @media (max-width: $vp-768) {
+    margin: 0 auto 81px;
+  }
 }
 
 .subscribe__price {
@@ -108,6 +134,11 @@
   margin: 0 0 59px;
   text-align: center;
   color: $additional;
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
 }
 
 .subscribe__btn {
@@ -142,6 +173,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: $vp-768) {
+    font-size: 80px;
+  }
 }
 
 .subscribe__button-wrapper {

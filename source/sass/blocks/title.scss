@@ -11,4 +11,8 @@
     font-size: 42px;
     margin: 0 0 40px;
   }
+
+  @media (max-width: $vp-768) {
+    font-size: 32px;
+  }
 }

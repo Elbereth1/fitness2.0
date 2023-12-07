@@ -3,12 +3,14 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getSlider} from './swiper.js';
 import {getSubSlider} from './swiper.js';
+import {getToggleSandwich} from './vendor/sandwich.js';
 
 
 // ---------------------------------
 
 getSlider();
 getSubSlider();
+getToggleSandwich();
 
 
 window.addEventListener('DOMContentLoaded', () => {

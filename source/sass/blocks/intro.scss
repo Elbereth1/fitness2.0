@@ -5,6 +5,10 @@
   @media (max-width: $vp-1366) {
     padding: 0 0 183px;
   }
+
+  @media (max-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .intro .container {
@@ -12,6 +16,10 @@
 
   @media (max-width: $vp-1366) {
     flex-direction: column;
+  }
+
+  @media (max-width: $vp-768) {
+    padding: 70px 0 277px;
   }
 }
 
@@ -26,16 +34,26 @@
     padding: 0 80px 50px;
     text-align: center;
   }
+
+  @media (max-width: $vp-768) {
+    padding: 0 15px 10px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
 }
 
 .intro .title {
   text-align: left;
-  font-size: 48px;
   margin-bottom: 25px;
 
   @media (max-width: $vp-1366) {
     margin-bottom: 6px;
     text-align: center;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
 
@@ -46,6 +64,10 @@
 
   @media (max-width: $vp-1366) {
     margin-bottom: 50px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 40px;
   }
 }
 
@@ -63,6 +85,12 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(20, 54, 122, 0.50);
+
+  @media (max-width: $vp-768) {
+    bottom: 5%;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .intro__btn {
