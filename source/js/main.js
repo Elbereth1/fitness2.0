@@ -1,16 +1,14 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {getSlider} from './swiper.js';
-import {getSubSlider} from './swiper.js';
-import {getToggleSandwich} from './vendor/sandwich.js';
+import {getSlider} from './modules/slider.js';
+import {getSubSlider} from './modules/slider.js';
+import {getToggleSandwich} from './modules/sandwich.js';
+import {initPhoneMask} from './modules/phone-mask/phone-mask.js';
+import {initTabs} from './modules/tabs/init-tabs.js';
 
 
 // ---------------------------------
-
-getSlider();
-getSubSlider();
-getToggleSandwich();
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  getSlider();
+  getSubSlider();
+  getToggleSandwich();
   // Modules
   // ---------------------------------
 
@@ -30,6 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initPhoneMask();
+    initTabs();
   });
 });
 

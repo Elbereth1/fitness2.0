@@ -1,4 +1,4 @@
-import swiper from './vendor/swiper.js';
+import swiper from '../vendor/swiper.js';
 
 const getSlider = () => {
   const swiper = new Swiper('.swiper', {

@@ -71,11 +71,11 @@
   }
 }
 
-.intro__text {
+.intro p {
   margin: 0;
 }
 
-.intro__text:not(:last-of-type) {
+.intro p:not(:last-of-type) {
   margin-bottom: 15px;
 }
 
