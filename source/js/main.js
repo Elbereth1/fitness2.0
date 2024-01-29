@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   getSlider();
   getSubSlider();
-  getToggleSandwich();
+  //getToggleSandwich();
   // Modules
   // ---------------------------------
 

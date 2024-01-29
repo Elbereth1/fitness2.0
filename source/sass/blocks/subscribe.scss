@@ -200,7 +200,12 @@
   }
 
   @media (max-width: $vp-1366) {
-    top: 9%;
+    top: 7%;
+  }
+
+  @media (max-width: $vp-320) {
+    top: 7%;
+    gap: 19px;
   }
 }
 

@@ -35,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1%;
     margin: 0 0 40px;
   }
 }
@@ -113,6 +112,14 @@
   }
 }
 
+.faq__sublist {
+  width: 100%;
+}
+
+.faq__sublist-item {
+  width: 100%;
+}
+
 .faq__sublist-wrapper p {
   margin: 0;
   font-size: 18px;
@@ -133,7 +140,7 @@
   width: 32px;
   height: 32px;
   top: 35px;
-  right: 0;
+  right: 22px;
   border: none;
   border-radius: 50%;
   padding: 0;

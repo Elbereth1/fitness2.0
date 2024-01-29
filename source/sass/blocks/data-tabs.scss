@@ -41,7 +41,7 @@
 
 [data-tabs="element"].is-active {
   z-index: 1;
-
+  width: 100%;
   visibility: visible;
   opacity: 1;
 }
@@ -55,7 +55,7 @@
   [data-tabs="element"] {
     z-index: 1;
     visibility: visible;
-    position: static;
+    //position: static;
     opacity: 1;
   }
 }

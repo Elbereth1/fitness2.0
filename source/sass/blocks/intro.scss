@@ -23,6 +23,10 @@
   }
 }
 
+.intro img {
+  margin: 0 auto;
+}
+
 .intro__text-wrapper {
   padding: 0 10px 10px 60px;
   max-width: 35%;
@@ -82,14 +86,19 @@
 .intro__video-wrapper {
   position: absolute;
   bottom: 16%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 53%;
+  transform: translateX(-53%);
   background-color: rgba(20, 54, 122, 0.50);
 
-  @media (max-width: $vp-768) {
-    bottom: 5%;
-    width: 100%;
+  @media (max-width: $vp-1366) {
+    bottom: 15%;
     height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: $vp-768) {
+
   }
 }
 

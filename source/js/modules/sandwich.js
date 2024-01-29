@@ -6,11 +6,11 @@ const getToggleSandwich = () => {
     if (sandwich.classList.contains('faq__sublist-button--open')) {
       sandwich.classList.remove('faq__sublist-button--open');
       sandwich.classList.add('faq__sublist-button--closed');
-      faq.classList.remove('');
+      list.classList.remove('is-active');
     } else {
       sandwich.classList.remove('faq__sublist-button--closed');
       sandwich.classList.add('faq__sublist-button--open');
-      faq.classList.add('');
+      list.classList.add('is-active');
     }
   });
 };

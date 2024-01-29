@@ -45,7 +45,8 @@
           <a class="hero__button button" href="#">Купить абонемент</a>
         </div>
         <picture>
-          <source type="image/webp" media="(max-width: 1366px)" srcset="img/main-photo-tablet.webp 1x, img/main-photo-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1366px)"
+                  srcset="img/main-photo-tablet.webp 1x, img/main-photo-tablet@2x.webp 2x">
           <source media="(max-width: 1366px)" srcset="img/main-photo-tablet.jpg 1x, img/main-photo-tablet@2x.jpg 2x">
           <img src="img/main-photo.jpg" width="500" height="556" alt="Промо-фото" srcset="img/main-photo@2x.jpg 2x">
         </picture>
@@ -56,17 +57,24 @@
         <div class="intro__text-wrapper">
           <h2 class="title">Тренажерный зал</h2>
           <p class="intro__subtitle">Просторный зал площадью 900 кв/м</p>
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий. </p>
         </div>
-        <div class="intro__video-wrapper">
-          <a class="intro__video-link" href="#">
         <picture>
           <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
           <source media="(max-width: 1366px)" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x">
           <img src="img/gym.jpg" width="660" height="401" alt="Тренажерный зал">
         </picture>
+        <div class="intro__video-wrapper">
+          <a class="intro__video-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/gym-1.webp 1x, img/gym-1@2x.webp 2x">
+              <source media="(max-width: 1366px)" srcset="img/gym-1.png 1x, img/gym-1@2x.png 2x">
+              <img src="img/gym-1.png" width="364" height="228" alt="Видео-заставка">
+            </picture>
           </a>
           <button class="intro__btn" type="button" aria-label="воспроизвести">
             <svg class="intro__btn-img" aria-label="Воспроизвести" focusable="false" aria-hidden="true" width="100"
@@ -99,7 +107,7 @@
     <section class="subscribe">
       <div class="container">
         <h2 class="subscribe title">Абонементы</h2>
-        <div class="subscribe__wrapper swiper-sub" data-tab="accordion">
+        <div class="subscribe__wrapper">
           <ul class="subscribe__list">
             <li class="subscribe__item swiper-slide">
               <span class="subscribe__subtitle">С тренером</span>
@@ -129,11 +137,12 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe__button-wrapper" data-tab="subscribe-bullets">
-          <button class="subscribe__button subscribe__button--current" data-tab="subscribe-bullet-1" type="button">1 месяц
+        <div class="subscribe__button-wrapper" data-tabs="subscribe-bullets">
+          <button class="subscribe__button subscribe__button--current" data-tab="subscribe-bullet-1" type="button">1
+            месяц
           </button>
-          <button class="subscribe__button" data-tab="subscribe-bullet" type="button">6 месяцев</button>
-          <button class="subscribe__button" data-tab="subscribe-bullet" type="button">12 месяцев</button>
+          <button class="subscribe__button" data-tabs="subscribe-bullet" type="button">6 месяцев</button>
+          <button class="subscribe__button" data-tabs="subscribe-bullet" type="button">12 месяцев</button>
         </div>
       </div>
     </section>
@@ -159,7 +168,8 @@
           <a class="promo__link" href="#">Заполнить заявку</a>
         </div>
         <picture>
-          <source type="image/webp" media="(max-width: 1366px)" srcset="img/promo-1-tablet.webp 1x, img/promo-1-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1366px)"
+                  srcset="img/promo-1-tablet.webp 1x, img/promo-1-tablet@2x.webp 2x">
           <source media="(max-width: 1366px)" srcset="img/promo-1-tablet.jpg 1x, img/promo-1-tablet@2x.jpg 2x">
           <img src="img/promo-1.jpg" alt="Тренер" width="660" height="500" srcset="img/promo-1@2x.jpg 2x">
         </picture>
@@ -251,7 +261,7 @@
                   <source type="image/webp" srcset="img/coach-4.webp 1x, img/coach-4@2x.webp 2x">
                   <img src="img/coach-4.jpg" width="260" height="294" alt="Тренер">
                 </picture>
-                 <span>Мария Кетова</span>
+                <span>Мария Кетова</span>
               </a>
             </li>
           </ul>
@@ -368,52 +378,61 @@
     <section class="faq">
       <div class="container">
         <h2 class="title">Вопросы и ответы</h2>
-        <div class="faq__list-wrapper no-transition" data-tab="parent">
+        <div class="faq__list-wrapper no-transition" data-tabs="parent">
           <ul class="faq__list" data-tab="controls">
             <li class="faq__item">
-              <button class="faq__button is-active" type="button" data-tab="control">Центр</button>
+              <button class="faq__button" type="button" data-tabs="control">Центр</button>
             </li>
             <li class="faq__item">
-              <button class="faq__button" type="button" data-tab="control">Абонемент</button>
+              <button class="faq__button" type="button" data-tabs="control">Абонемент</button>
             </li>
             <li class="faq__item">
-              <button class="faq__button" type="button" data-tab="control">Услуги</button>
+              <button class="faq__button" type="button" data-tabs="control">Услуги</button>
             </li>
             <li class="faq__item">
-              <button class="faq__button" type="button" data-tab="control">Правила</button>
+              <button class="faq__button" type="button" data-tabs="control">Правила</button>
             </li>
           </ul>
-          <ul class="faq__sublist" data-tab="content">
-            <li class="faq__sublist-item" id="tab_1" data-tab="element">
+          <ul class="faq__sublist" data-tabs="content" data-accordion="parent">
+            <li class="faq__sublist-item" id="tab_1" data-tabs="element" data-accordion="element">
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Как стать членом фитнес-центра?</span>
-                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание" name="faq__sublist-btn">
-                    <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание"
+                          name="faq__sublist-btn" data-accordion="button">
+                    <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                         width="42" height="42" viewBox="0 0 42 42" fill="none">
                       <circle cx="21" cy="21" r="20.5" stroke="#102654"/>
                       <path d="M21 12V21M21 30V21M21 21H30M21 21H12"/>
                     </svg>
                   </button>
                 </div>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить
-                  анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                <div class="faq__text" data-accordion="content">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить
+                    анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор
+                    придет вам на почту.</p>
+                </div>
               </div>
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Где можно посмотреть расписание?</span>
-                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание" name="faq__sublist-btn">
-                      <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-                        <circle cx="21" cy="21" r="20.5" stroke="#102654"/>
-                        <path d="M21 12V21M21 30V21M21 21H30M21 21H12"/>
-                      </svg>
+                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание"
+                          name="faq__sublist-btn">
+                    <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                         width="42" height="42" viewBox="0 0 42 42" fill="none">
+                      <circle cx="21" cy="21" r="20.5" stroke="#102654"/>
+                      <path d="M21 12V21M21 30V21M21 21H30M21 21H12"/>
+                    </svg>
                   </button>
                 </div>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
               </div>
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Есть кулеры в центре? Предоставляются полотенца?</span>
-                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание" name="faq__sublist-btn">
+                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание"
+                          name="faq__sublist-btn">
                     <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                          width="42" height="42" viewBox="0 0 42 42" fill="none">
                       <circle cx="21" cy="21" r="20.5" stroke="#102654"/>
@@ -437,15 +456,18 @@
                     </svg>
                   </button>
                 </div>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
               </div>
             </li>
-            <li class="faq__sublist-item" id="tab_2" data-tab="element">
+            <li class="faq__sublist-item" id="tab_2" data-tabs="element">
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Занятия с тренером входят в абонемент?</span>
-                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание" name="faq__sublist-btn">
-                    <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                  <button class="faq__sublist-button" type="button" aria-label="Развернуть описание"
+                          name="faq__sublist-btn">
+                    <svg class="faq__button-img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                         width="42" height="42" viewBox="0 0 42 42" fill="none">
                       <circle cx="21" cy="21" r="20.5" stroke="#102654"/>
                       <path d="M21 12V21M21 30V21M21 21H30M21 21H12"/>
                     </svg>
@@ -504,7 +526,7 @@
                   почту.</p>
               </div>
             </li>
-            <li class="faq__sublist-item" id="tab_3" data-tab="element">
+            <li class="faq__sublist-item" id="tab_3" data-tabs="element">
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
@@ -569,7 +591,7 @@
                   почту.</p>
               </div>
             </li>
-            <li class="faq__sublist-item" id="tab_4" data-tab="element">
+            <li class="faq__sublist-item" id="tab_4" data-tabs="element">
               <div class="faq__sublist-wrapper">
                 <div class="faq__sublist-inner">
                   <span>Есть в фитнес-центре дресс-код?</span>
@@ -645,7 +667,7 @@
         <h2 class="title">Отзывы</h2>
         <div class="comments__wrapper">
           <div class="comments__img-wrapper">
-            <img src="img/comment.png" width="80" height="80" alt="">
+            <img src="img/comment.png" width="80" height="80" alt="Фото">
             <span>Анна Орлова</span>
           </div>
           <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал

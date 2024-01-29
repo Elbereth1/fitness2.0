@@ -88,6 +88,8 @@
   top: 60%;
   background-color: transparent;
   border: none;
+  z-index: 5;
+  transform: translateY(-60%);
 
   @media (max-width: $vp-1366) {
     top: 50%;
