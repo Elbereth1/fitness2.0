@@ -88,17 +88,13 @@
   bottom: 16%;
   left: 53%;
   transform: translateX(-53%);
-  background-color: rgba(20, 54, 122, 0.50);
+  background-color: rgba(20, 54, 122, 0.5);
 
   @media (max-width: $vp-1366) {
     bottom: 15%;
     height: auto;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  @media (max-width: $vp-768) {
-
   }
 }
 

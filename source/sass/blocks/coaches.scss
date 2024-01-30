@@ -21,16 +21,10 @@
   position: relative;
   color: $default-white;
   display: flex;
- // max-height: 294px;
 
   &:hover .coaches__wrapper {
     display: block;
   }
-
-}
-
-.coaches__wrapper {
- // display: none;
 }
 
 .coaches__link span {

@@ -36,7 +36,8 @@
   }
 }
 
-.hero__wrapper, .hero__text-wrapper {
+.hero__wrapper,
+.hero__text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +74,7 @@
 .hero__subtitle {
   margin-bottom: 25px;
   text-align: center;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-size: 48px;
   font-weight: 600;
   line-height: normal;
@@ -88,7 +89,6 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
-
 }
 
 .hero .title {

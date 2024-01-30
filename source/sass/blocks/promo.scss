@@ -59,7 +59,7 @@
   line-height: normal;
   color: $default-white;
   font-weight: 600;
-  font-family: "Alumni sans";
+  font-family: "Alumni sans", sans-serif;
 
   @media (max-width: $vp-1366) {
     font-size: 48px;
@@ -74,7 +74,6 @@
   display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-template-rows: repeat(2, min-content);
-
 }
 
 .promo__text {
@@ -116,7 +115,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
   }
 
   @media (max-width: $vp-1366) {
@@ -140,10 +139,6 @@
   border: 4px solid $default-white;
   text-transform: uppercase;
   font-size: 12px;
-
-  &:hover {
-
-  }
 
   @media (max-width: $vp-1366) {
     font-size: 10px;

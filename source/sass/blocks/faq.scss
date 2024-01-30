@@ -22,7 +22,8 @@
   }
 }
 
-.faq__list, .faq__sublist {
+.faq__list,
+.faq__sublist {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -49,7 +50,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   color: $base;
   cursor: pointer;
   background-color: transparent;
@@ -88,7 +89,7 @@
 }
 
 .faq__sublist-wrapper {
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   border-right: none;
   border-left: none;
   padding: 32px 180px 25px 0;
@@ -132,8 +133,8 @@
 }
 
 .faq p {
-     display: none;
-  }
+  display: none;
+}
 
 .faq__sublist-button {
   position: absolute;
@@ -161,5 +162,4 @@
 
 .faq__sublist-button:active .faq__button-img {
   fill: $base;
-
 }

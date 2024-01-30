@@ -14,7 +14,7 @@
   max-width: 560px;
   padding: 62px 62px 62px 170px;
   background-color: $comments-back;
-  filter: drop-shadow(0px 0px 40px rgba(28, 51, 116, 0.20));
+  filter: drop-shadow(0 0 40px rgba(28, 51, 116, 0.2));
   color: $default-white;
   position: relative;
   margin: 0 auto;
@@ -87,7 +87,7 @@
 .comments__slide-img {
   stroke: $base;
 
-&--next {
-  transform: rotate(180deg);
-}
+  &--next {
+    transform: rotate(180deg);
+  }
 }

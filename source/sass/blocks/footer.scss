@@ -42,7 +42,8 @@
   }
 }
 
-.footer__list, .footer__social {
+.footer__list,
+.footer__social {
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -50,7 +51,7 @@
 }
 
 .footer__list {
- display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 40px;
 
