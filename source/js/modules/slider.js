@@ -1,7 +1,6 @@
-import swiper from '../vendor/swiper.js';
-
-const getSlider = () => {
-  const swiper = new Swiper('.swiper', {
+const Swiper = window.Swiper;
+const getSlider = () =>
+  new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 4,
     loop: true,
@@ -29,12 +28,11 @@ const getSlider = () => {
       },
     },
   });
-};
 
 export {getSlider};
 
-const getSubSlider = () => {
-  const sub = new Swiper('.swiper-sub', {
+const getSubSlider = () =>
+  new Swiper('.swiper-sub', {
     slidesPerView: 3,
 
     // Pagination
@@ -48,7 +46,5 @@ const getSubSlider = () => {
       bulletElement: 'button',
     },
   });
-};
 
 export {getSubSlider};
-
