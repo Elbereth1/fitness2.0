@@ -1,5 +1,5 @@
 const sandwich = document.querySelector('.faq__sublist-button');
-const list = document.querySelector('.faq > p');
+const list = document.querySelector('.faq__text > p');
 
 const getToggleSandwich = () => {
   sandwich.addEventListener('click', () => {

@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getSlider} from './modules/slider.js';
 import {getSubSlider} from './modules/slider.js';
-import {getToggleSandwich} from './modules/sandwich.js';
+import {initAccordions} from './modules/accordion/init-accordion.js';
 import {initPhoneMask} from './modules/phone-mask/phone-mask.js';
 import {initTabs} from './modules/tabs/init-tabs.js';
 
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   getSlider();
   getSubSlider();
-  getToggleSandwich();
+  // getToggleSandwich();
   // Modules
   // ---------------------------------
 
@@ -32,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initPhoneMask();
     initTabs();
+    initAccordions();
   });
 });
 

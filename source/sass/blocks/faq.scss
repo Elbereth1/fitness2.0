@@ -132,8 +132,12 @@
   }
 }
 
-.faq p {
+.faq__text p {
   display: none;
+}
+
+.faq__text .is-active {
+  display: block;
 }
 
 .faq__sublist-button {

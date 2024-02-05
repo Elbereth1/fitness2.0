@@ -1,5 +1,4 @@
 .footer {
-  padding: 42px 104px;
   background-color: $dark;
 
   @media (max-width: $vp-1366) {
@@ -12,10 +11,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  @media (max-width: $vp-1366) {
-    padding: 45px;
-  }
+  padding: 45px 103px;
 
   @media (max-width: $vp-768) {
     padding: 50px 15px;
@@ -31,7 +27,7 @@
 }
 
 .footer .logo {
-  margin: 0 270px 0 0;
+  margin: 0 153px 0 0;
 
   @media (max-width: $vp-1366) {
     margin-right: 30px;
